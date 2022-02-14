@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black: #000;
+    --color-coffe: #8b692a;
+    --color-rose: #eee4a6;
+    --tipografia: system-ui, "Helvetica Neue", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--tipografia);
+}
+
+
+/* tipografias */
+
+@font-face {
+    font-family: AugustScriptBold;
+    src: url(tipografias/AugustScriptBold.ttf);
+}
