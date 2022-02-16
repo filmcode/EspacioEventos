@@ -1,0 +1,39 @@
+.content {
+    margin: 0px auto;
+    background: #fff;
+    width: 100%;
+    border-radius: 50% 50% 0 0 / 3% 3% 0 0;
+    position: relative;
+    top: -30px;
+}
+
+.content-start {
+    background-image: url(../img/start.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 100% 70% 0 0 / 2% 2% 0 0;
+}
+
+
+/*Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .content-start {
+        border-radius: 100% 70% 0 0 / 3% 3% 0 0;
+        width: 90%;
+        overflow: visible;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .content-start {
+        border-radius: 100% 70% 0 0 / 2% 2% 0 0;
+        width: 80%;
+    }
+}
