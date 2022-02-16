@@ -1,0 +1,106 @@
+.quote {
+    background-image: url(../img/quote.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+.quote__title {
+    width: 100%;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.quote__title span:nth-child(1) {
+    display: block;
+    font-size: 1.5em;
+}
+
+.quote__title span:nth-child(2) {
+    display: block;
+    font-weight: 100;
+    font-size: 1em;
+    line-height: 10px;
+}
+
+.quote__button {
+    background-color: transparent;
+    padding: 0px 30px;
+    border: 2px solid #fff;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    line-height: 40px;
+    height: 44px;
+}
+
+.quote__button:hover {
+    background-color: #fff;
+    color: var(--color-coffe);
+}
+
+
+/*Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .quote {
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 110%;
+        margin-left: -5%;
+        justify-content: space-around;
+    }
+    .quote__title {
+        width: auto;
+        text-align: left;
+        margin-bottom: 0;
+        /* font-size: 14px; */
+    }
+    .quote__button {
+        flex-basis: 180px;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .quote__title {
+        font-size: 16px;
+    }
+    .quote__button {
+        flex-basis: auto;
+        padding: 0 30px;
+        line-height: 50px;
+        height: 54px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .quote__title {
+        font-size: 18px;
+    }
+}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .quote__title {
+        font-size: 20px;
+    }
+}
