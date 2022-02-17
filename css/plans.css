@@ -1,0 +1,161 @@
+.plans {
+    color: #fff;
+}
+
+.plans__title {
+    text-align: center;
+    margin: 10% auto;
+    font-size: 20px;
+}
+
+.plans__title span {
+    display: block;
+}
+
+.plans__title span:nth-child(1) {
+    font-size: 1em;
+}
+
+.plans__title span:nth-child(2) {
+    font-size: 1.25em;
+    line-height: 1rem;
+}
+
+
+/* colums */
+
+.plans__columns {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10%;
+}
+
+.plans__column {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.plans__column:nth-child(1) {
+    /* border-bottom: 1px solid #fff; */
+    margin-bottom: 20px;
+}
+
+.plans__column-title {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.plans__column-title span {
+    display: block;
+}
+
+.plans__column-title span:nth-child(1) {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.plans__column-title span:nth-child(2) {
+    line-height: 1em;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.plans__column-paragraph {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.plans__column-paragraph span {
+    display: block;
+    line-height: 1.15em;
+}
+
+.plans__button {
+    padding: 0px 20px;
+    border: 2px solid #fff;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 40px;
+}
+
+.plans__button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.plans__button--quote-auto {
+    background-color: var(--color-coffe);
+    border-color: var(--color-coffe);
+}
+
+.plans__button--quote-auto:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: var(--color-coffe);
+}
+
+
+/*Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .plans__title {
+        font-size: 22px;
+    }
+    .plans__column-title,
+    .plans__column-paragraph {
+        font-size: 18px;
+        line-height: normal;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .plans__title {
+        font-size: 24px;
+    }
+    .plans__column-title,
+    .plans__column-paragraph {
+        font-size: 20px;
+    }
+    .plans__button {
+        line-height: 50px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .plans__columns {
+        flex-wrap: nowrap;
+    }
+    .plans__column-title {
+        font-size: 22px;
+    }
+    .plans__title {
+        font-size: 26px;
+    }
+    .plans__column-paragraph {
+        font-size: 16px;
+        height: 55px;
+    }
+    .plans__column:first-child {
+        border-right: 1px solid #fff;
+    }
+}
+
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .plans__column-paragraph {
+        font-size: 18px;
+    }
+}
